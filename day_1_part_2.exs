@@ -13,7 +13,6 @@ File.stream!("input/day_1.txt")
   |> Stream.drop_while(&(!is_integer(&1)))
   |> Enum.to_list
   |> List.first
-  |> Stream.run
   |> IO.puts
 
 
